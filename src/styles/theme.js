@@ -15,4 +15,7 @@ export default {
   
       PINK: "#FF859B"
     }
+
+    
+
   }

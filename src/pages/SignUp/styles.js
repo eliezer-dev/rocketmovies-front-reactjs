@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImg from '../../assets/SignIn/background-img.png'
+import backgroundImg from '../../assets/shared/background-img.png'
 
 
 export const Container = styled.div`

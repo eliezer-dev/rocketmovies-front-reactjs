@@ -1,6 +1,6 @@
 import { Container } from "./styles";
-import StarChecked from "../../assets/Home/star.png"
-import StarNoChecked from "../../assets/Home/star-empty.png"
+import StarChecked from "../../assets/components/Rating/star.png"
+import StarNoChecked from "../../assets/components/Rating/star-empty.png"
 
 export function Rating ({ratingnumber, ...rest}) {
     

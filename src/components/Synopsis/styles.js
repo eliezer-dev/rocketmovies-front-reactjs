@@ -30,4 +30,8 @@ export const Container = styled.div`
         gap: 8px
 
     }
+    > .stars {
+        display: inline-block;
+        margin-top: 8px;
+    }
 `;

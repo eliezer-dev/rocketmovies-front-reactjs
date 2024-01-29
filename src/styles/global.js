@@ -31,5 +31,25 @@ export default createGlobalStyle`
 
     button:hover, a:hover {
         filter: brightness(0.9);
+    }  
+
+    body {
+        scrollbar-width: thin;          /* "auto" or "thin" */
+        scrollbar-color: ${({theme}) => theme.COLORS.PINK} transparent;   /* scroll thumb and track */
     }
+
+    /* Works on Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: ${({theme}) => theme.COLORS.PINK};
+        border-radius: 8px;
+    }
+
 `;

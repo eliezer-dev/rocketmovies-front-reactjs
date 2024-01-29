@@ -16,11 +16,12 @@ export const Title = styled.div `
     grid-area: title;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 24px;
     padding: 0 125px;
 
 
     h2 {
+        width: 100%;
         color: #FFF;
         font-size: 32px;
         font-weight: 400;
@@ -32,10 +33,14 @@ export const Title = styled.div `
 `
 
 export const Content = styled.div`
-    margin-top: 38px;
-    height: 100vh;
-    padding: 0 125px;
-    border: 1px solid red;
+    padding-right: 8px;
+    margin: 24px 125px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+
 
 `;
 
