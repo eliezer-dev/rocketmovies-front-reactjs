@@ -3,7 +3,7 @@ import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Container, Form } from "./styles";
-import ArrowLeft from "../../assets/pages/NewMovie/ArrowLeft.svg"
+import ArrowLeft from "../../assets/shared/ArrowLeft.svg"
 import { Markdown } from "../../components/Markdown";
 
 export function NewMovie(){

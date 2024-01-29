@@ -13,6 +13,7 @@ export const Container = styled.div`
         color: ${({theme}) => theme.COLORS.WHITE}
         
     }
+
     > p {
         margin-top: 15px;
         width: 100%;
@@ -24,11 +25,17 @@ export const Container = styled.div`
         -webkit-box-orient: vertical
     }
 
-    >footer {
+    > footer {
         margin-top: 20px;
         display:flex;
-        gap: 8px
+        gap: 8px;
 
+        > span {
+            color: ${({theme}) => theme.COLORS.WHITE};
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+        }
     }
     > .stars {
         display: inline-block;

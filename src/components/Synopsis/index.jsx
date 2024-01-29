@@ -1,9 +1,11 @@
 import { Container } from "./styles";
 import { Tag } from "../Tag";
 import { Rating } from "../Rating";
+import { Link } from "react-router-dom";
 
 export function Synopsis({data, className, ...rest}){
     return (
+        <Link to="/movie/1">
         <Container>
             <h2>{data.title}</h2>
             <Rating className={className} ratingnumber={data.ratingnumber}/>
@@ -18,6 +20,7 @@ export function Synopsis({data, className, ...rest}){
                 </footer>
             }
         </Container>
+        </Link>
     )
     
 }
