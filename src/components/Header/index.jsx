@@ -10,20 +10,22 @@ export function Header(){
              className="searchTitles"
              placeholder="Pesquisar pelo titulo"
             />
-                    
-            <Profile>
-                <ul>
-                    <li>
-                        <p>Eliezer Ramos</p>
-                    </li>
-                    <li>
-                        <Link to="/">
-                            Sair
-                        </Link>
-                    </li>
-                </ul>
-                <img src="https://github.com/eliezer-dev.png" alt="Foto do profile do usuario"/>
-            </Profile>
+            <Link to="/perfil"> 
+                <Profile>
+                    <ul>
+                        <li>
+                            <p>Eliezer Ramos</p>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Sair
+                            </Link>
+                        </li>
+                    </ul>
+                    <img src="https://github.com/eliezer-dev.png" alt="Foto do profile do usuario"/>
+                </Profile>
+            </Link>
+            
         </Container>
     )
 }

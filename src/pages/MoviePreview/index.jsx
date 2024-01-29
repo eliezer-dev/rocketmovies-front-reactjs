@@ -5,13 +5,19 @@ import ArrowLeft from "../../assets/shared/ArrowLeft.svg"
 import { Rating } from "../../components/Rating";
 import Vector from "../../assets/pages/MoviePreview/Vector.svg"
 import { Tag } from "../../components/Tag";
+import { ButtonText } from "../../components/ButtonText";
 
 export function MoviePreview()  {
     return (
         <Container>
             <Header/>
             <Content>
-                <Link to="/"> <img src={ArrowLeft} alt="Seta para a esquerda"/> Voltar</Link>
+                <ButtonText
+                    path="/"
+                    img={ArrowLeft}
+                    alt="Seta para a esquerda"
+                    name="Voltar"
+                />
                 <Title>
                     <h1>Interestelar</h1>
                     <Rating

@@ -17,12 +17,7 @@ export const Form = styled.form`
         font-weight: 500;
     }
 
-    > a {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        color: ${({theme}) => theme.COLORS.PINK}
-    }
+   
     svg {
         align-self: center;
         font-size: 18px;

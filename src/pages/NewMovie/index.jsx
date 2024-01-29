@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
 import { Input } from "../../components/Input";
 import { Container, Form } from "./styles";
 import ArrowLeft from "../../assets/shared/ArrowLeft.svg"
@@ -12,7 +13,12 @@ export function NewMovie(){
             <Header/>
                
             <Form>
-                <Link to="/"> <img src={ArrowLeft} alt="Seta para a esquerda"/> Voltar</Link>
+                <ButtonText
+                    path="/"
+                    img={ArrowLeft}
+                    alt="Seta para a esquerda"
+                    name="Voltar"
+                />
                 <h1>Novo filme</h1>
                 <div className="input">
                     <Input
