@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
 import { Autor, Container, Content, Tags, Title } from "./styles";
 import ArrowLeft from "../../assets/shared/ArrowLeft.svg"
