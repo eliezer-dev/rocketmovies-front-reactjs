@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
@@ -40,7 +40,7 @@ export function NewMovie(){
         await api.post(`/movies/${user.id}`, {title, description, rating, tags:markdowns})
         .then(
             alert(`Informações do filme ${title} salvas com sucesso.`),
-            navigate("/")
+            navigate(-1)
             
         )
         .catch(error => {
@@ -53,13 +53,17 @@ export function NewMovie(){
         })
     }
 
+    function handleBack() {
+        navigate(-1)
+    }
+
     return (    
         <Container>
             <Header/>
                
             <Form>
                 <ButtonText
-                    path="/"
+                    onClick={handleBack}
                     img={ArrowLeft}
                     alt="Seta para a esquerda"
                     name="Voltar"

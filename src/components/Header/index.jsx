@@ -5,6 +5,7 @@ import { useAuth } from "../../hooks/auth";
 import { useNavigate } from "react-router-dom";
 
 export function Header(){
+
     const {signOut} = useAuth();
     const navigate = useNavigate();
 
@@ -13,10 +14,13 @@ export function Header(){
         navigate("/")
     }
 
+    function handleBack() {
+        navigate(-1)
+    }
 
     return (
         <Container>        
-            <p>RocketMovies</p>
+            <p onClick={handleBack}>RocketMovies</p>
             <Input
              className="searchTitles"
              placeholder="Pesquisar pelo titulo"

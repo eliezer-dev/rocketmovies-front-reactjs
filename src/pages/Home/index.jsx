@@ -39,7 +39,7 @@ export function Home() {
         <Container>
             <Header/>
             <Title>
-                <h2>Meus filmes</h2>
+                <h2>Meus filmes</h2>                
                 <Button title="Adicionar Filme" onClick={handleNewMovie}/>
             </Title>
             <Content>
