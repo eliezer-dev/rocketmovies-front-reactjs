@@ -33,6 +33,7 @@ export const Form = styled.form`
 
     > textarea {
         margin-top: 40px;
+        color: ${({theme}) => theme.COLORS.WHITE};
         background: ${({theme}) => theme.COLORS.BACKGROUND_900};
         width: 100%;
         height: 274px;

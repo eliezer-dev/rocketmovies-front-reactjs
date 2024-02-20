@@ -8,7 +8,7 @@ export function Synopsis({data, className, ...rest}){
         <Link to="/movie/1">
         <Container>
             <h2>{data.title}</h2>
-            <Rating className={className} ratingnumber={data.ratingnumber}/>
+            <Rating className={className} ratingnumber={data.rating}/>
             <p>{data.description}</p>
             {
                 data.tags &&

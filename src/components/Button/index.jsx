@@ -1,20 +1,13 @@
 import { Container } from "./styles";
-import { Link } from "react-router-dom";
 
-export function Button({title, disabled=false, path, ...rest}) {
+export function Button({title, disabled=false, ...rest}) {
     return(
-        <Container>
-             <Link to={path}>
-                <button
-                    type="button"
-                    disabled={disabled}
-                    {...rest}
-                    >
-                    {title}
-                </button>
-            </Link>
-        
-        </Container>
-    
+        <Container
+            type="button"
+            disabled={disabled}
+            {...rest}
+            >
+            {title}       
+        </Container>   
     )
 }

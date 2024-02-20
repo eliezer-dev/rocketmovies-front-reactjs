@@ -11,13 +11,13 @@ export function Rating ({ratingnumber, ...rest}) {
     let starChecked = []
     let starNoChecked = []
     for (let i = 0; i < ratingnumber; i++) {
-        starChecked.push(<img src={StarChecked} alt="imagem de uma estrela com preenchimento"/>)
+        starChecked.push(<img key={i+1} src={StarChecked} alt="imagem de uma estrela com preenchimento"/>)
     }
 
     if (ratingnumber < 5) {
         ratingnumber = 5 - ratingnumber
         for (let i = 0; i < ratingnumber; i++) {
-            starNoChecked.push(<img src={StarNoChecked} alt="imagem de uma estrela sem preenchimento"/>)
+            starNoChecked.push(<img key={i+1} src={StarNoChecked} alt="imagem de uma estrela sem preenchimento"/>)
         }
     }
     
