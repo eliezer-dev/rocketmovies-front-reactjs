@@ -37,19 +37,14 @@ export function NewMovie(){
     }
 
     async function handleSaveMovie() {
-        await api.post(`/movies/${user.id}`, {title, description, rating, tags:markdowns})
-        .then(
-            alert(`Informações do filme ${title} salvas com sucesso.`),
+        await api.post("/movies", {title, description, rating, tags:markdowns}) 
+        .then(() => {
+            alert(`Informações do filme ${title} salvas com sucesso.`)
             navigate(-1)
-            
-        )
+        })
         .catch(error => {
-            if (error) {
-                alert(error.data.message)
-            }else {
-                alert("Não foi possível salvar")
-            }
-
+            alert("Não foi possível salvar.")
+            console.log(error.message)
         })
     }
 
@@ -99,7 +94,7 @@ export function NewMovie(){
                     ) 
                     }
                     <Markdown 
-                        isnew 
+                        isnew="true" 
                         placeholder="Novo marcador"
                         value={newMarkdown}
                         onChange={e => {setNewMarkdown(e.target.value)}}
