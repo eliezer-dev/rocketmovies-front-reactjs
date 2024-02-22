@@ -6,6 +6,11 @@ export const Container = styled.div`
     border-radius: 16px;
     height: 223px;
     padding: 32px;
+    cursor: pointer;
+    
+    :hover{
+        opacity: .8;
+    }
 
     > h2 {
         font-size: 24px;
@@ -41,4 +46,5 @@ export const Container = styled.div`
         display: inline-block;
         margin-top: 8px;
     }
+    
 `;

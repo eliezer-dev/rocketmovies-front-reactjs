@@ -1,7 +1,7 @@
 import { Container } from "./styles"; 
 import {FiPlus, FiX} from 'react-icons/fi';
 
-export function Markdown ({isnew, value, onClick, ...rest}) {
+export function Markdown ({isnew=false, value, onClick, ...rest}) {
     return(
         <Container isnew = {isnew}>
             <input

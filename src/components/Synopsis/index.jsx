@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 
 export function Synopsis({data, className, ...rest}){
     return (
-        <Link to="/movie/1">
-        <Container>
+        <Container {...rest}>
             <h2>{data.title}</h2>
             <Rating className={className} ratingnumber={data.rating}/>
             <p>{data.description}</p>
@@ -20,7 +19,6 @@ export function Synopsis({data, className, ...rest}){
                 </footer>
             }
         </Container>
-        </Link>
     )
     
 }

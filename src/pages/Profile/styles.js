@@ -13,6 +13,7 @@ export const Header = styled.div`
 `;
 
 export const Picture = styled.div`
+    position: relative;
     width: 186px;
     background: transparent;
     margin: -90px auto 64px;
@@ -22,6 +23,29 @@ export const Picture = styled.div`
         border-radius: 50%;
         width: 186px;
         height: 186px;
+    }
+
+    > label {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: ${({theme}) => theme.COLORS.PINK};
+        bottom: 7px;
+        right: 7px;
+        
+        input {
+            display: none;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+        }
     }
 
 `;

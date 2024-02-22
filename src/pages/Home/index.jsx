@@ -16,6 +16,10 @@ export function Home() {
         navigate("/new")
     }
 
+    function handleDetails(id) {
+        navigate(`/details/${id}`)
+    }
+
     useEffect(() => {
         async function fetchNotes(){
             let notes = (await api.get(`/movies?user_id=${user.id}`)).data
@@ -45,7 +49,7 @@ export function Home() {
             <Content>
                 {notes.map(
                     note => (
-                        <Synopsis key={note.id} data={note} className="stars" />
+                        <Synopsis key={note.id} data={note} className="stars" onClick={() => handleDetails(note.id)} />
                     )      
                 )}
             </Content>

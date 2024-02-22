@@ -25,7 +25,7 @@ export function Header(){
              className="searchTitles"
              placeholder="Pesquisar pelo titulo"
             />
-            <Link to="/perfil"> 
+            <Link to="/profile"> 
                 <Profile>
                     <ul>
                         <li>
